@@ -22,21 +22,21 @@ function ServicesSection() {
           </div>
           <div className="card">
             <div className="icon">
-              <img src={teamwork} alt="clock" />
+              <img src={teamwork} alt="teamwork" />
               <h3>Teamwork</h3>
               <p>Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
           <div className="card">
             <div className="icon">
-              <img src={diaphragm} alt="clock" />
+              <img src={diaphragm} alt="diaphragm" />
               <h3>Diaphragm</h3>
               <p>Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
           <div className="card">
             <div className="icon">
-              <img src={money} alt="clock" />
+              <img src={money} alt="money" />
               <h3>Affordable</h3>
               <p>Lorem ipsum dolor sit amet.</p>
             </div>
@@ -44,7 +44,7 @@ function ServicesSection() {
         </div>
       </div>
       <div className="image">
-        <img src={home2} alt="" />
+        <img src={home2} alt="Camera" />
       </div>
     </div>
   );
