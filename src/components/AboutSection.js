@@ -5,17 +5,20 @@ function AboutSection() {
   return (
     <div>
       <div className="description">
-        <div className="hide">
-          <h1>We work to make</h1>
+        <div className="title">
+          <div className="hide">
+            <h1>We work to make</h1>
+          </div>
+          <div className="hide">
+            <h1>
+              your <span>dreams</span> come
+            </h1>
+          </div>
+          <div className="hide">
+            <h1>true.</h1>
+          </div>
         </div>
-        <div className="hide">
-          <h1>
-            your <span>dreams</span> come
-          </h1>
-        </div>
-        <div className="hide">
-          <h1>true.</h1>
-        </div>
+
         <p>
           Contact us for any photography or videography ideas that you have. We
           have proffesionals with amazing skills.
