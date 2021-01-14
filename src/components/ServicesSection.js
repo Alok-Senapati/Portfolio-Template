@@ -4,49 +4,50 @@ import teamwork from "../img/teamwork.svg";
 import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import home2 from "../img/home2.png";
+import { Services, Description, Image, Cards, Card } from "../styles";
 
 function ServicesSection() {
   return (
-    <div className="services">
-      <div className="description">
-        <h1>
+    <Services>
+      <Description>
+        <h2>
           High <span>quality</span> services
-        </h1>
-        <div className="cards">
-          <div className="card">
+        </h2>
+        <Cards>
+          <Card>
             <div className="icon">
               <img src={clock} alt="clock" />
               <h3>Efficient</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
             </div>
-          </div>
-          <div className="card">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </Card>
+          <Card>
             <div className="icon">
               <img src={teamwork} alt="teamwork" />
               <h3>Teamwork</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
             </div>
-          </div>
-          <div className="card">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </Card>
+          <Card>
             <div className="icon">
               <img src={diaphragm} alt="diaphragm" />
               <h3>Diaphragm</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
             </div>
-          </div>
-          <div className="card">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </Card>
+          <Card>
             <div className="icon">
               <img src={money} alt="money" />
               <h3>Affordable</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
             </div>
-          </div>
-        </div>
-      </div>
-      <div className="image">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </Card>
+        </Cards>
+      </Description>
+      <Image>
         <img src={home2} alt="Camera" />
-      </div>
-    </div>
+      </Image>
+    </Services>
   );
 }
 

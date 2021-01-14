@@ -1,22 +1,23 @@
 import React from "react";
 import home1 from "../img/home1.png";
+import { About, Description, Hide, Image } from "../styles";
 
 function AboutSection() {
   return (
-    <div>
-      <div className="description">
+    <About>
+      <Description>
         <div className="title">
-          <div className="hide">
-            <h1>We work to make</h1>
-          </div>
-          <div className="hide">
-            <h1>
+          <Hide>
+            <h2>We work to make</h2>
+          </Hide>
+          <Hide>
+            <h2>
               your <span>dreams</span> come
-            </h1>
-          </div>
-          <div className="hide">
-            <h1>true.</h1>
-          </div>
+            </h2>
+          </Hide>
+          <Hide>
+            <h2>true.</h2>
+          </Hide>
         </div>
 
         <p>
@@ -24,11 +25,11 @@ function AboutSection() {
           have proffesionals with amazing skills.
         </p>
         <button>Contact Us</button>
-      </div>
-      <div className="image">
+      </Description>
+      <Image>
         <img src={home1} alt="A guy with camera" />
-      </div>
-    </div>
+      </Image>
+    </About>
   );
 }
 
