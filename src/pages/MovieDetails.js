@@ -29,21 +29,26 @@ const MovieDetails = () => {
       animate="show"
       exit="exit"
     >
-      {!flag ? (
+      {!movie ? (
         <h1>Movie not found!!!</h1>
       ) : (
         <>
           <HeadLine>
-            <h2>{movie.title}</h2>
-            <img src={movie.mainImg} alt="movie" />
+            <h2>{movie?.title}</h2>
+            <img src={movie?.mainImg} alt="movie" />
           </HeadLine>
           <Awards>
             {movie.awards?.map((award) => (
-              <Award title={award.title} description={award.description} key />
+              <Award
+                title={award.title}
+                description={award.description}
+                key={award.title}
+              />
             ))}
           </Awards>
+
           <ImageDisplay>
-            <img src={movie.secondaryImg} alt="movie" />
+            <img src={movie?.secondaryImg} alt="movie" />
           </ImageDisplay>
         </>
       )}
