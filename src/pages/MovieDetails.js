@@ -57,7 +57,7 @@ const Details = styled(motion.div)`
   color: white;
   overflow: hidden;
   h1 {
-    padding: 15vh;
+    padding: 8vh;
     font-size: 3rem;
     font-weight: lighter;
     color: red;
@@ -66,7 +66,7 @@ const Details = styled(motion.div)`
 
 const HeadLine = styled.div`
   min-height: 90vh;
-  padding-top: 20vh;
+  padding-top: 10vh;
   position: relative;
   h2 {
     text-align: center;
@@ -78,6 +78,9 @@ const HeadLine = styled.div`
     height: 70vh;
     object-fit: cover;
   }
+  @media (max-width: 900px) {
+    padding-top: 15vh;
+  }
 `;
 
 const Awards = styled.div`
@@ -86,6 +89,9 @@ const Awards = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  @media (max-width: 600px) {
+    padding: 7rem 4rem 5rem;
+  }
 `;
 
 const Award = ({ title, description }) => {

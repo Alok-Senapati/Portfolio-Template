@@ -32,6 +32,13 @@ const GlobalStyle = createGlobalStyle`
     @media(max-width:1200px){
         font-size:12px
     }
+    @media(max-width:900px){
+        font-size:10px
+    }
+    @media(max-width:500px){
+        font-size:9px
+    }
+    outline:none;
     scroll-behavior:smooth;
 }
 
@@ -60,6 +67,9 @@ button{
 h2{
     font-weight: bold;
     font-size: 4rem;
+  @media (max-width: 600px) {
+      font-size:3rem;
+  }
 }
 
 h3{
@@ -78,7 +88,10 @@ a{
 span {
     font-weight: bold;
     color: #23d997;
-    font-size:4rem
+    font-size:4rem;
+    @media (max-width: 600px) {
+      font-size:3rem;
+  }
 }
 
 p{

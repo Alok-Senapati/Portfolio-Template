@@ -7,7 +7,14 @@ export const About = styled(motion.div)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10rem 7rem 5rem;
+  padding: 10vh 7rem 5rem;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    padding: 15vh 4rem 5rem;
+  }
 `;
 
 export const Description = styled.div`
@@ -17,6 +24,12 @@ export const Description = styled.div`
     font-weight: lighter;
   }
   z-index: 5;
+  @media (max-width: 900px) {
+    padding-right: 0rem;
+    padding-bottom: 5rem;
+  }
+  @media (max-width: 600px) {
+  }
 `;
 
 export const Image = styled(motion.div)`
@@ -26,6 +39,16 @@ export const Image = styled(motion.div)`
     width: 100%;
     height: 80vh;
     object-fit: cover;
+  }
+  @media (max-width: 900px) {
+    img {
+      height: 75vh;
+    }
+  }
+  @media (max-width: 600px) {
+    img {
+      height: 60vh;
+    }
   }
   z-index: 5;
 `;
@@ -48,10 +71,18 @@ export const Services = styled(About)`
 export const Cards = styled(motion.div)`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 900px) {
+    //flex-wrap: nowrap;
+  }
+  @media (max-width: 600px) {
+  }
 `;
 
 export const Card = styled(motion.div)`
-  flex-basis: 20rem;
+  //flex-basis: 20rem;
+  padding: 0rem 1rem;
   .icon {
     display: flex;
     align-items: center;
@@ -60,7 +91,17 @@ export const Card = styled(motion.div)`
       padding: 1rem;
       background: white;
       color: black;
+      width: 10rem;
     }
+  }
+  @media (max-width: 1315px) {
+    flex-basis: 35rem;
+  }
+  @media (max-width: 900px) {
+    flex-basis: 20rem;
+  }
+  @media (max-width: 700px) {
+    flex-basis: 8rem;
   }
 `;
 
@@ -133,5 +174,20 @@ export const StyledNav = styled.nav`
     width: 50%;
     justify-content: space-around;
     align-items: center;
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 15vh;
+    ul {
+      width: 70%;
+    }
+  }
+  @media (max-width: 600px) {
+    ul {
+      width: 100%;
+      justify-content: space-between;
+    }
   }
 `;
