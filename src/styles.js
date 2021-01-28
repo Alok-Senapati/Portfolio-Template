@@ -1,12 +1,13 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const About = styled.div`
+export const About = styled(motion.div)`
   min-height: 90vh;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem 7rem;
+  padding: 10rem 7rem 5rem;
 `;
 
 export const Description = styled.div`
@@ -15,9 +16,10 @@ export const Description = styled.div`
   h2 {
     font-weight: lighter;
   }
+  z-index: 5;
 `;
 
-export const Image = styled.div`
+export const Image = styled(motion.div)`
   flex: 1;
   overflow: hidden;
   img {
@@ -25,6 +27,7 @@ export const Image = styled.div`
     height: 80vh;
     object-fit: cover;
   }
+  z-index: 5;
 `;
 
 export const Hide = styled.div`
@@ -32,6 +35,7 @@ export const Hide = styled.div`
 `;
 
 export const Services = styled(About)`
+  padding-top: 5rem;
   h2 {
     padding-bottom: 5rem;
   }
@@ -41,12 +45,12 @@ export const Services = styled(About)`
   }
 `;
 
-export const Cards = styled.div`
+export const Cards = styled(motion.div)`
   display: flex;
   flex-wrap: wrap;
 `;
 
-export const Card = styled.div`
+export const Card = styled(motion.div)`
   flex-basis: 20rem;
   .icon {
     display: flex;
@@ -61,10 +65,15 @@ export const Card = styled.div`
 `;
 
 export const Faq = styled(About)`
+  padding-top: 5rem;
   display: block;
   h2 {
     padding-bottom: 3rem;
     font-weight: lighter;
+  }
+  h4 {
+    margin-top: 6rem;
+    margin-bottom: 1rem;
   }
   span {
     display: block;
@@ -86,5 +95,43 @@ export const Faq = styled(About)`
       padding: 1rem;
       font-size: 1.2rem;
     }
+  }
+`;
+
+export const StyledNav = styled.nav`
+  position: sticky;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 7rem 0rem 7rem;
+  font-size: 1.3rem;
+  color: white;
+  overflow: hidden;
+  background: #2a2a2a;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  h1 {
+    a {
+      font-size: 1.5rem;
+      font-family: "Lobster", cursive;
+    }
+  }
+  li {
+    position: relative;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
   }
 `;

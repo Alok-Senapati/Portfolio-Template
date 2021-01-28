@@ -7,11 +7,38 @@ const GlobalStyle = createGlobalStyle`
     padding:0;
     box-sizing:border-box;
     font-size:13px;
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #999;
+        border-radius:5px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #555;
+        border-radius:5px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #666;
+    }
+
+    @media(max-width:1200px){
+        font-size:12px
+    }
 }
+
 
 body{
     background:#1b1b1b;
     font-family: 'Inter', sans-serif;
+    overflow-x:hidden;
 }
 
 button{
