@@ -9,16 +9,13 @@ const MovieDetails = () => {
   const { url } = useRouteMatch();
   const [movies, setMovies] = useState(MovieState());
   const [movie, setMovie] = useState({});
-  const [flag, setFlag] = useState(true);
   console.log(setMovies);
 
   useEffect(() => {
     let currentMovie = movies.filter((stateMovie) => stateMovie.url === url);
     if (!currentMovie.length) {
-      setFlag(false);
       setMovie({});
     } else {
-      setFlag(true);
       setMovie(currentMovie[0]);
     }
   }, [movies, url]);
