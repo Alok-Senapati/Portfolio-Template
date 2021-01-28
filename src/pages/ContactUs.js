@@ -44,9 +44,10 @@ const ContactUs = () => {
 
 const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
-  margin-top: 10vh;
+  padding-top: 10vh;
   color: #353535;
   min-height: 90vh;
+  overflow-y: hidden;
   @media (max-width: 1500px) {
     padding: 2rem;
     font-size: 1rem;

@@ -32,6 +32,7 @@ const GlobalStyle = createGlobalStyle`
     @media(max-width:1200px){
         font-size:12px
     }
+    scroll-behavior:smooth;
 }
 
 

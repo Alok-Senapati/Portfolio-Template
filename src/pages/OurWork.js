@@ -18,9 +18,9 @@ import { useScroll } from "../useScroll";
 
 const OurWork = () => {
   const { url } = useRouteMatch();
-  const [element, control] = useScroll();
-  const [element1, control1] = useScroll();
-  const [element2, control2] = useScroll();
+  const [element, control] = useScroll(0.5);
+  const [element1, control1] = useScroll(0.5);
+  const [element2, control2] = useScroll(0.5);
   return (
     <Work
       variants={pageAnimation}

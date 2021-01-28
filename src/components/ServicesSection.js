@@ -10,7 +10,7 @@ import { sectionAnim, cardContainer, cardAnim, imageAnim } from "../animation";
 import { useScroll } from "../useScroll";
 
 function ServicesSection() {
-  const [element, control] = useScroll();
+  const [element, control] = useScroll(0.4);
   return (
     <Services
       ref={element}

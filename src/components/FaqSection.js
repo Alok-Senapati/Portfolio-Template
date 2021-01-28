@@ -6,7 +6,7 @@ import { useScroll } from "../useScroll";
 import { sectionAnim } from "../animation";
 
 const FaqSection = () => {
-  const [element, control] = useScroll();
+  const [element, control] = useScroll(0.4);
   return (
     <Faq
       ref={element}
