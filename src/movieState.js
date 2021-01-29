@@ -34,7 +34,7 @@ export const MovieState = () => {
     {
       title: "Good Times",
       mainImg: goodtimes,
-      url: "/work/good-times",
+      url: "/work/goodtimes",
       secondaryImg: goodtimes2,
       awards: [
         {
