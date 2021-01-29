@@ -41,7 +41,7 @@ const StyledNavLink = styled(motion.li)`
     padding: 0rem 1rem;
   }
   .nav-line {
-    padding-top: 1vh;
+    padding-top: 1rem;
     width: 100%;
     height: 4px;
     background: #23d997;
