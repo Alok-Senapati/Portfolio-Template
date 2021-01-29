@@ -161,7 +161,7 @@ export const StyledNav = styled.nav`
   }
   h1 {
     a {
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-family: "Lobster", cursive;
     }
   }

@@ -176,3 +176,20 @@ export const cardAnim = {
     },
   },
 };
+
+export const navLine = {
+  hidden: {
+    width: "0px",
+    display: "hidden",
+    opacity: 0,
+  },
+  show: {
+    width: "100%",
+    display: "initial",
+    opacity: 1,
+    transition: {
+      duration: 0.75,
+      ease: "easeOut",
+    },
+  },
+};

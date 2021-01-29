@@ -40,6 +40,7 @@ const GlobalStyle = createGlobalStyle`
     }
     outline:none;
     scroll-behavior:smooth;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
 
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { StyledNav } from "../styles";
 import { Link } from "react-router-dom";
+import NavLink from "./NavLink";
 
 const Nav = () => {
   return (
@@ -9,7 +10,10 @@ const Nav = () => {
         <Link to="/">Capture</Link>
       </h1>
       <ul>
-        <li>
+        <NavLink toPath="/" title="1. About Us"></NavLink>
+        <NavLink toPath="/work" title="2. Our Work"></NavLink>
+        <NavLink toPath="/contact" title="3. Contact Us"></NavLink>
+        {/*<li>
           <Link to="/">1. About Us</Link>
         </li>
         <li>
@@ -17,7 +21,7 @@ const Nav = () => {
         </li>
         <li>
           <Link to="/contact">3. Contact Us</Link>
-        </li>
+        </li>*/}
       </ul>
     </StyledNav>
   );
