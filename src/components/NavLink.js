@@ -32,7 +32,7 @@ const NavLink = ({ toPath, title }) => {
 };
 
 const StyledNavLink = styled(motion.li)`
-  height: 4vh;
+  height: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
